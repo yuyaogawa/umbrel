@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   web:
-    image: getumbrel/requestinvoice:v0.0.1
+    image: yuya207503/requestinvoice:latest@sha256:1377ece6f67de4da45b2204bd5b76a59e06bf7d3f5f4574c003b064877bf907b
     restart: on-failure
     stop_grace_period: 1m
     ports:

@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   web:
-    image: yuya207503/requestinvoice:latest@sha256:1377ece6f67de4da45b2204bd5b76a59e06bf7d3f5f4574c003b064877bf907b
+    image: yuya207503/requestinvoice:v0.0.1@sha256:75ccdcf5eae455fcc10039d2b3caf7bc37bdc0a534f4eea9839c22b77fc0a333
     restart: on-failure
     stop_grace_period: 1m
     ports:

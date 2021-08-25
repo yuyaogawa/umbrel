@@ -475,5 +475,28 @@
         ],
         "path": "",
         "defaultPassword": ""
+    },
+    {
+        "id": "requestinvoice",
+        "category": "Messaging",
+        "name": "request invoice http server",
+        "version": "0.0.1",
+        "tagline": "",
+        "description": "",
+        "developer": "",
+        "website": "",
+        "dependencies": [
+            "lnd"
+        ],
+        "repo": "https://github.com/yuyaogawa/requestinvoice",
+        "support": "",
+        "port": 8809,
+        "gallery": [
+            "1.jpg",
+            "2.jpg",
+            "3.jpg"
+        ],
+        "path": "",
+        "defaultPassword": ""
     }
 ]

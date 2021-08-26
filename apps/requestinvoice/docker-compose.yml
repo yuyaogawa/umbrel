@@ -2,11 +2,11 @@ version: "3.7"
 
 services:
   web:
-    image: yuya207503/requestinvoice:v0.0.1@sha256:
+    image: yuya207503/requestinvoice:v0.0.1@sha256:2cc75dce2a28b6ce747b4105f8e11a8825b7f5c3577c82d0330c0cc649481eea
     restart: on-failure
     stop_grace_period: 1m
     ports:
-      - 8809:8809
+      - "$APP_REQUEST_INVOICE_PORT:$APP_REQUEST_INVOICE_PORT"
     volumes:
       - ${LND_DATA_DIR}:/lnd:ro
       - ${APP_DATA_DIR}/data:/data
@@ -15,3 +15,6 @@ services:
       LND_GRPC_PORT: $LND_GRPC_PORT
       LND_GRPC_CERT: /lnd/tls.cert
       LND_GRPC_MACAROON: /lnd/data/chain/bitcoin/${BITCOIN_NETWORK}/admin.macaroon
+    networks:
+        default:
+          ipv4_address: $APP_REQUEST_INVOICE_IP

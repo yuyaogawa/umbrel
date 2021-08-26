@@ -387,6 +387,8 @@ for template in "${NGINX_CONF_FILE}" "${BITCOIN_CONF_FILE}" "${LND_CONF_FILE}" "
   sed -i "s/<app-vaultwarden-port>/${APP_VAULTWARDEN_PORT}/g" "${template}"
   sed -i "s/<app-code-server-ip>/${APP_CODE_SERVER_IP}/g" "${template}"
   sed -i "s/<app-code-server-port>/${APP_CODE_SERVER_PORT}/g" "${template}"
+  sed -i "s/<app-requestinvoice-ip>/${APP_REQUEST_INVOICE_IP}/g" "${template}"
+  sed -i "s/<app-requestinvoice-port>/${APP_REQUEST_INVOICE_PORT}/g" "${template}"
 done
 
 ##########################################################

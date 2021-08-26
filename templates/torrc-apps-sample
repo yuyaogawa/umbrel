@@ -42,3 +42,7 @@ HiddenServicePort 80 <app-photoprism-ip>:<app-photoprism-port>
 # mempool Hidden Service
 HiddenServiceDir /var/lib/tor/app-mempool
 HiddenServicePort 80 <app-mempool-ip>:<app-mempool-port>
+
+# requestinvoice Hidden Service
+HiddenServiceDir /var/lib/tor/app-requestinvoice
+HiddenServicePort 80 <app-requestinvoice-ip>:<app-requestinvoice-port>
